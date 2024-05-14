@@ -1,0 +1,101 @@
+{
+  "productos": [
+    {
+      "nombre": "Mario Bross",
+      "precio": "10.00",
+      "imagen_url": "https://compraralia.net/wp-content/uploads/2017/11/Carrera-RC-Nintendo-Mario-Kart.jpg",
+      "id": "1"
+    },
+    {
+      "id": "1b75",
+      "nombre": "carrito",
+      "precio": "35.00",
+      "imagen_url": "https://http2.mlstatic.com/D_NQ_NP_634773-MLU75098171874_032024-O.webp"
+    },
+    {
+      "id": "12ff",
+      "nombre": "transfomer camion",
+      "precio": " 12.50",
+      "imagen_url": "https://http2.mlstatic.com/D_NQ_NP_2X_666663-MLU72750626554_112023-F.webp"
+    },
+    {
+      "id": "f0ea",
+      "nombre": "banco de herramientas",
+      "precio": "18.50",
+      "imagen_url": "https://http2.mlstatic.com/D_NQ_NP_835154-MLA48554339371_122021-O.webp"
+    },
+    {
+      "id": "a217",
+      "nombre": "mate cars",
+      "precio": "37.70",
+      "imagen_url": "https://http2.mlstatic.com/D_NQ_NP_792209-MLU72637073473_112023-O.webp"
+    },
+    {
+      "id": "bb5d",
+      "nombre": "auto control remoto",
+      "precio": "50.00",
+      "imagen_url": "https://http2.mlstatic.com/D_NQ_NP_772788-MLU75143006476_032024-O.webp"
+    },
+    {
+      "id": "ae92",
+      "nombre": "cars ",
+      "precio": "15.00",
+      "imagen_url": "https://tse1.mm.bing.net/th?id=OIP.6V-G7nG55tkMwvsOqujPbAHaEp&pid=Api&P=0&h=180"
+    },
+    {
+      "id": "e515",
+      "nombre": "nave",
+      "precio": "35.00",
+      "imagen_url": "https://m.media-amazon.com/images/I/5136MnAsApL.jpg"
+    },
+    {
+      "id": "7476",
+      "nombre": "carrito nena",
+      "precio": "10.00",
+      "imagen_url": "https://http2.mlstatic.com/carro-carrito-fisher-price-montable-juguete-nina-mercado-D_NQ_NP_20148-MLM20184710276_102014-F.jpg"
+    },
+    {
+      "id": "b92f",
+      "nombre": "Donatello",
+      "precio": "39.00",
+      "imagen_url": "https://http2.mlstatic.com/D_NQ_NP_865404-MLA71148795759_082023-O.webp"
+    },
+    {
+      "id": "2a6e",
+      "nombre": "Tortuga Ninja moto",
+      "precio": "89.00",
+      "imagen_url": "https://http2.mlstatic.com/D_NQ_NP_979991-MLA71241386460_082023-O.webp"
+    },
+    {
+      "id": "9ea5",
+      "nombre": "Dinosaurio",
+      "precio": "12.00",
+      "imagen_url": "https://images-na.ssl-images-amazon.com/images/I/71YesRy76zL._AC_SL1500_.jpg"
+    },
+    {
+      "nombre": "Guante hombre araña",
+      "precio": "9.50",
+      "imagen_url": "https://http2.mlstatic.com/D_NQ_NP_766576-MLA76068271082_052024-O.webp",
+      "id": "g0PsWxN"
+    },
+    {
+      "nombre": "conejo peluche",
+      "precio": "35.00",
+      "imagen_url": "https://http2.mlstatic.com/D_NQ_NP_802817-MLA74654504579_022024-O.webp",
+      "id": "yfC_B55"
+    },
+    {
+      "id": "b703",
+      "nombre": "piano ",
+      "precio": "35.00",
+      "imagen_url": "https://http2.mlstatic.com/D_NQ_NP_871460-MLA72852433713_112023-O.webp"
+    },
+    {
+      "nombre": "Iron man",
+      "precio": "30",
+      "imagen_url": "https://i.ytimg.com/vi/ZZJwkYI7G-w/maxresdefault.jpg",
+      "id": "gTRB-PM"
+    }
+    
+  ]
+}

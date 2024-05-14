@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="https://iconos8.es/icons/set/favicon" type="image/x-icon">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <title>AluraGeek-2024</title>
+</head>
+<body>
+    <header>
+        <img src="src/logo.png" alt="">
+    </header>
+    <main>
+        <section class="productos">
+            <h1 class="titulo-productos">Mis Productos</h1>
+          
+              
+            <div id="product-cards" class="grid-container">
+              
+            <!--  Productos renderizados del db.json 
+                 <div class="card" data-product-id="ID_DEL_PRODUCTO">
+                    
+                    <img class="imagen" src="{{ productos.imagen_url }}" alt="Imagen del producto"> 
+                    <h2 class="product-name">Nombre del producto</h2>
+                    <p class="product-description">Descripción del producto</p>
+                    <p class="product-price">$XX.XX</p>
+                   <button id="boton-eliminar" class="delete-button">
+                    <img src="./src/icons8-basura-24.png" alt="Icono de eliminar"> Eliminar
+                    </button> </div>-->
+                </div>     
+        </section>    
+            
+        <section class="formulario">
+                <div class="form">
+                    <h2>Agregar <br> producto</h2>
+                    <form id="productForm">
+                        <input type="text" id="nombre" name="nombre" placeholder="Nombre…">
+                        <input type="text" id="precio" name="precio" placeholder="Precio…">
+                        <input type="text" id="imagenUrl" name="imagenUrl" placeholder="URL de la imagen…">
+                        <div class="contenedor-botones">
+                            <button type="submit">Enviar</button>
+                            <button type="reset">Limpiar</button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </div>
+        
+        
+    </main>
+    <footer>
+        <div class="footer">
+            <img src="src/logo.png" alt="">
+            <p>Desarrollado por Carrizo Cristina</p>
+            <p> Alura / One 2024</p>
+        </div>
+    </footer>
+</body>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="index.js"></script>
+<script src="js/formulario.js"></script>
+</html>

@@ -1,0 +1,289 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+header img{
+    width: 100%;
+}
+main {
+  background-color: rgb(145, 145, 233);
+  display: flex; /* Make main a flex container */
+}
+.productos, .formulario {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.productos {
+  text-align: center;
+}
+
+.titulo-productos {
+  margin-bottom: 20px;
+  font-size: 40px;
+  border: #000000 2px solid;
+  border-radius: 30px;
+}
+.grid-container {
+  display: grid; /* Cambiamos a grid */
+  grid-template-columns: repeat(3, 1fr); /* Establecemos tres columnas iguales */
+  gap: 10px;
+  height: 650px;
+  padding: 16px;
+  margin-bottom: 80px;
+  overflow-y: auto; /* Agrega una barra de desplazamiento vertical cuando sea necesario */
+}
+
+/* Estilos para la tarjeta de producto */
+.card-producto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  gap: 10px;
+  width: 250px;
+  height: 260px;
+  text-align: left;
+  border-radius: 10px;
+  border: 3px solid black;
+  color: #ffffff;
+  background-color: #5d04d9;
+  box-shadow: -5px 6px 5px rgba(0, 0, 0, 0.25);
+  position: relative;
+}
+
+
+
+
+/* Estilos para la imagen del producto */
+.imagen-producto {
+  width: 190px;
+  height: 174px;
+  border-radius: 10px;
+  border: 3px solid #000000;
+  background-color: #ffffff;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease-in-out;
+}
+.imagen-producto:hover {
+  transform: scale(1.2);
+}
+
+
+/* Estilos para el nombre del producto */
+.nombre-producto {
+  margin-top: 20px;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 19.5px;
+}
+
+/* Estilos para el precio del producto */
+.contenedor-precio {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20.8px;
+}
+
+/* Estilos para el botón de eliminar */
+.delete-button {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  /* Otros estilos del botón */
+  color: aqua;
+  background-color: #007bff;
+}
+.delete-button:hover {
+  background-color: #cc0000; /* Cambia el color de fondo al pasar el cursor sobre el botón */
+}
+
+
+/* Styles for the formulario section */
+
+.formulario {
+  margin: 70px auto ;
+  padding: 20px;
+  background-color: #50e2f2;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  height: 400px;
+ 
+}
+
+.formulario h2 {
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.formulario input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 2px solid #151515;
+  border-radius: 25px;
+  box-sizing: border-box;
+}
+
+.formulario .contenedor-botones {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  margin: 10px;
+}
+
+.formulario button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin: 0 5px;
+}
+
+.formulario button[type="submit"] {
+  background-color: #007bff;
+  color: white;
+}
+
+.formulario button[type="reset"] {
+  background-color: #dc3545;
+  color: white;
+}
+
+.formulario button[type="submit"]:hover{
+  color: aqua;
+}
+.formulario button[type="reset"]:hover{
+  color: #007bff;
+}
+.footer{
+  background-color: #5d04d9;
+}
+
+.footer img{
+  width: 100%;
+    
+}
+.footer p{
+    text-align: center;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+
+/* Media query para pantallas más pequeñas */
+@media (max-width: 768px) {
+  /* Estilos para el contenido principal */
+  main {
+      flex-direction: column; /* Cambia a disposición de columna */
+      align-items: center; /* Centra los elementos horizontalmente */
+  }
+
+  /* Estilos para el encabezado */
+  header {
+      order: 1; /* Cambia el orden para que aparezca primero */
+  }
+
+  /* Estilos para el formulario */
+  .formulario {
+      order: 2; /* Cambia el orden para que aparezca segundo */
+      width: 90%; /* Ancho del 90% */
+      max-width: 400px; /* Máximo ancho para evitar que sea demasiado grande */
+      margin: 20px auto; /* Margen arriba y abajo, centrado horizontalmente */
+      padding: 20px; /* Añade un poco de relleno */
+      background-color: #9ed3ec; /* Fondo blanco */
+      border-radius: 10px; /* Bordes redondeados */
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra */
+  }
+  .formulario button[type="submit"]:hover{
+    color: aqua;
+  }
+  .formulario button[type="reset"]:hover{
+    color: #007bff;
+  }
+  /* Estilos para la sección de productos */
+  .productos {
+      order: 3; /* Cambia el orden para que aparezca tercero */
+      width: 90%; /* Ancho del 90% */
+      max-width: 100%; /* Máximo ancho para ocupar toda la pantalla */
+      margin: 20px auto; /* Margen arriba y abajo, centrado horizontalmente */
+  }
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas con igual ancho */
+}
+   /* Estilos para las tarjetas de producto */
+   .card-producto {
+    width: 70%; /* Ancho del 45% del contenedor padre */
+    margin: 0 auto 20px; /* Margen inferior y centrado horizontal */
+    overflow: hidden; /* Oculta el contenido que se desborda */
+    height: 300px; /* Altura fija para mantenerlas proporcionales */
+    border-radius: 10px; /* Bordes redondeados */
+    border: 3px solid #000; /* Borde sólido */
+    background-color: #5d04d9; /* Color de fondo */
+    box-shadow: -5px 6px 5px rgba(0, 0, 0, 0.25); /* Sombra */
+    padding: 20px; /* Espaciado interno */
+    display: flex; /* Utilizar flexbox para alinear elementos */
+    flex-direction: column; /* Alinear elementos en columna */
+    justify-content: space-between; /* Distribuir espacio verticalmente */
+}
+
+/* Estilos para las imágenes de los productos */
+.imagen-producto {
+    width: 90%; /* Ancho del 100% del contenedor padre */
+    height: 150px; /* Altura fija para mantenerlas proporcionales */
+    border-radius: 10px; /* Bordes redondeados */
+    margin-bottom: 15px; /* Espaciado inferior */
+}
+.imagen-producto:hover {
+  transform: scale(1.1);}
+/* Estilos para el nombre del producto */
+.nombre-producto {
+    font-size: 18px; /* Tamaño de fuente más grande */
+    text-align: center; /* Centrado del texto */
+    margin-bottom: 10px; /* Espaciado inferior */
+}
+
+/* Estilos para el precio del producto */
+.contenedor-precio {
+    font-size: 16px; /* Tamaño de fuente del precio */
+    text-align: center; /* Centrado del texto */
+    margin-bottom: 40px; /* Espaciado inferior */
+}
+
+/* Estilos para el botón de eliminación */
+.delete-button {
+    width: 40%; /* Ancho del 100% del contenedor */
+    padding: 10px; /* Espaciado interno */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    background-color: #007bff; /* Color de fondo */
+    color: rgb(13, 13, 14); /* Color del texto */
+    cursor: pointer; /* Cursor de puntero al pasar por encima */
+    transition: background-color 0.3s; /* Transición suave del color de fondo */
+}
+
+.delete-button:hover {
+  background-color: #cc0000; /* Cambia el color de fondo al pasar el cursor sobre el botón */
+}
+
+
+  /* Estilos para el footer */
+  .footer {
+      order: 4; /* Cambia el orden para que aparezca al final */
+  }
+
+}
